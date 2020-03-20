@@ -303,5 +303,10 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+  h2{
+    background-color: whitesmoke;
+    opacity: 0.5;
+
+  }
 }
 
