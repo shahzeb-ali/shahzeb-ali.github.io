@@ -26,7 +26,7 @@ body, html {
 
 /* Style tab links */
 .tablink {
-  background-color: #555;
+  background-color: #777;
   color: white;
   float: left;
   border: none;
@@ -51,7 +51,7 @@ body, html {
 
 #About\ me {background-color: antiquewhite;}
 #News {background-color: green;}
-#Contact {background-color: blue;}
+#Contact {background-color: green;}
 #About {background-color: orange;}
 
 
@@ -289,6 +289,9 @@ textarea {
   tr,
   img {
     page-break-inside: avoid;
+
+    border-radius: 50%;
+
   }
   p,
   h2,
