@@ -30,8 +30,8 @@
   <!-------------try--------------->
 
   <button class="tablink" onclick="openPage('Home', this, '#029c98')" id="defaultOpen">About me</button>
-  <button class="tablink" onclick="openPage('News', this, '#029c98')" >Blog</button>
-  <button class="tablink" onclick="openPage('Contact', this, '#029c98')">Contact</button>
+  <button class="tablink" onclick="openPage('News', this, '#029c98')">Blog</button>
+  <button class="tablink" onclick="window.location.href = 'src/python_for_statistics.html';">Contact</button>
   <!--<button class="tablink" onclick="openPage('About', this, 'orange')">Project</button> -->
 
   <div id="Home" class="tabcontent">
@@ -47,7 +47,7 @@
           <div class="w3-white w3-text-grey w3-card-4">
             <div class="w3-display-container">
               <div align="center">
-                <img src="/img/shahzeb.png" style="border-radius: 50% ; hight : 30%; width:30%"  align="center" alt="shahzeb">
+                <img src="/img/shahzeb.png" style="border-radius: 50% ; height : 30%; width:30%"  align="center" alt="shahzeb">
               </div>
               <div class="w3-display-bottomleft w3-container w3-text-black" align="center">
                 <h3 class="w3-opacity  w3-teal" style="width: 100%" >Shahzeb Ali</h3>
@@ -171,8 +171,43 @@
   </div>
 
   <div id="News" class="tabcontent">
-    <h3>News</h3>
-    <p>Some news this fine day!</p>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <button class="dropdown-btn">Statistics
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Statistics Basics</a>
+        <a href="src/python_for_statistics.html">Python for Statistics</a>
+      </div>
+      <button class="dropdown-btn">Data Science
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Natural language processing</a>
+        <a href="src/python_for_statistics.html">Social Network Analysis</a>
+      </div>
+      <button class="dropdown-btn">Embedded Systems
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Arduino basics</a>
+        <a href="src/python_for_statistics.html">Linux for embedded systems</a>
+      </div>
+      <a href="#">How to</a>
+    </div>
+
+    <div id="main">
+      <span class="sticky_it w3-opacity  w3-teal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      <h2>Content coming soon.....</h2>
+      <h1 id="demo"></h1>
+
+    </div>
+
+
+
+
+
   </div>
 
   <div id="Contact" class="tabcontent">
